@@ -1,0 +1,1033 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Public+Sans:wght@100;200;300;400;500;800;900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+.navbar img {
+    margin-left: 10%;
+    margin-right: 20%;
+    width: 5%;
+}
+
+.logo img {
+    padding-right: 450px;
+    margin-left: 50px;
+    width: 80px;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: #000000;
+    text-decoration: none;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+nav {
+    padding-right: 150px;
+}
+
+li {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-header {
+    background-image: url("../../../img/header-topo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    display: flex;
+}
+
+.content-fundo-topo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.container-header {
+    width: 100%;
+
+}
+
+.titulo-header h1 {
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 75px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.titulo-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+.imagem-topo {
+    margin-left: 10%;
+
+}
+
+.titulo-header {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.titulo-header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgb(226, 221, 221);
+    font-weight: 900
+}
+
+.button-curriculo {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.button-curriculo button {
+    padding: 10px;
+    background-color: white;
+    color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo-header a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.icones {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.editar-icone a {
+    background-color: white;
+    color: #111214;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.animate__fadeIn {
+    animation: animate__fadeIn;
+    animation-duration: 1s;
+}
+
+.animate__fadeInLeft {
+    animation: animate__fadeIn;
+    animation-duration: 2s;
+}
+
+.animate__fadeRight {
+    animation: animate__fadeRight;
+    animation-duration: 2s;
+}
+
+.container-quem-sou {
+    padding-top: 150px;
+    background-image: url(../../../img/quem-eu-sou.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.texto-sou h5 {
+    color: #737373;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.texto-sou h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.texto-sou {
+    width: 40%;
+}
+
+.texto-sou p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
+    margin-right: 150px;
+}
+
+.idade-cidade {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+
+.texto-icone {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-icone label {
+    font-size: 10px;
+    margin-left: 5px;
+    color: black;
+}
+
+.icone-idade p {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.icone-idade {
+    padding: 10px;
+    border: solid 1px #737373;
+    ;
+    border-radius: 10px;
+    background-color: #737373;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+
+}
+
+.projetos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    background-image: url(../../../img/projetos-fundo.png);
+    width: 100%;
+}
+
+.projetos h1{
+    color: white;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.imagem-projeto{
+    width: 50%;
+}
+
+.imagem-projeto img{
+    width: 70%;
+}
+.projetos2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.conteudo-projeto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 100px;
+    width: 80%;
+}
+
+.conteudo-projeto2{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.pax2{
+    background-color: gray;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    gap: 20px;
+    width: 65%;
+}
+
+.pax3{
+    background-color: gray;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    gap: 20px;
+    width: 50%;
+}
+
+.pax2 h2{
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.pax3 h2{
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.pax h2{
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.title-img{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.pax2 p{
+    margin-left: 30px;
+    padding-right: 100px;
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.pax3 p{
+    margin-left: 30px;
+    padding-right: 100px;
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.icones-pax{
+    margin-left: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.title-img img{
+    width: 50px;
+}
+.texto-sobre-mim {
+    /* Estilos personalizados aqui */
+    color: white;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    width: 70%;
+    text-align: justify;
+    /* ... */
+}
+
+.minha-experiencia {
+    background-image: url(../../../img/experiencia.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    
+
+}
+
+.linha-do-tempo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.linha-do-tempo h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: right;
+    font-size: 35px;
+}
+
+.linha{
+    width: 100%;
+    background-color: blue;
+    display: flex;
+}
+
+.tempo1{
+    width: 50%;
+    display: flex;
+    align-items: right;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.linha-do-tempo h1{
+    margin-bottom: 50px;
+}
+
+.icones-habilidades{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.icones-habilidades2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+    padding-bottom: 100px;
+}
+
+.texto-icone-habilidade{
+    padding: 13px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 7%;
+
+
+}
+
+.texto-icone-habilidade{
+    color: black;
+}
+
+.texto-icone-habilidade h5{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.texto-icone-habilidade img{
+    width: 100%;
+}
+
+
+.site-desenvolvidos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../../../img/site.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    padding-bottom: 100px
+}
+
+
+.site-desenvolvidos p{
+    padding: 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 35px;
+}
+
+.tipos-site{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 100px;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+
+.tamanho-site-aide{
+    width: 25%;
+    padding: 10px;
+    background-image: url(../../../img/site-aide.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tamanho-site-aide a{
+    background-color: white;
+    margin-top: 550px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.tamanho-site-usina{
+    width: 25%;
+    padding: 10px;
+    background-image: url(../../../img/site-usina.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tamanho-site-usina a{
+    margin-top: 550px;
+    background-color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.tamanho-site-easy{
+    width: 25%;
+    padding: 10px;
+    background-image: url(../../../img/site-easy.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tamanho-site-easy a{
+    margin-top: 550px;
+    background-color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.carreira{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    margin-top: 100px;
+    background-image: url(../../../img/carreira.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.carreira h1{
+    margin-top: 50px;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    color: white;
+    font-size: 35px;
+    margin-left: 120px;
+}
+
+
+.experiencias{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+.unidades{
+    padding: 40px;
+    background: rgb(171,170,170);
+    background: linear-gradient(180deg, rgba(171,170,170,1) 0%, rgba(57,56,56,1) 65%, rgba(0,0,0,1) 97%);
+    border-radius: 10px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.unidades p{
+    font-size:17px;
+    width: 100%;
+    text-align: center;
+}
+
+.unidades a{
+    font-size: 13px;
+    margin-top: 15px;
+    color: rgb(173, 171, 171);
+}
+
+.unidades h7{
+    font-size: 10;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.unidades b{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.unidades h7{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    background-image: url('../../../img/rodape.png');
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.tipos-contato{
+    width: 30;
+    margin-left: 100px;
+    padding: 100px;
+}
+
+.tipos-contato h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+.second-div{
+    width: 60%;
+    padding: 0px;
+}
+
+.second-div img{
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.tipos-contato h2{
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.whatsapp{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.whatsapp label{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tipos-contato button{
+    border: none;
+    background-color: #737373;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.typing-effect-blink {
+    animation: blink 1s infinite;
+}
+
+.bolinha{
+    margin-top: 50px;
+    width: 1.5%;
+    height: 13%;
+    padding: 2px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 100px;
+}
+
+.comprido{
+    width: 0.5%;
+    height: 100px;
+    background-color: white;
+    border-radius: 25px;
+
+}
+
+.texto-icone-habilidade{
+    padding: 30px;
+}
+
+.linha-do-tempo p{
+    color: white;
+}
+
+.minha-experiencia-mobile{
+    display: none;
+}
+
+
+
+@media(max-width: 992px) {
+    .nav {
+        display: none;
+    }
+
+    ul {
+        display: none;
+
+    }
+
+    label {
+        display: none;
+    }
+
+    .titulo-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .content-fundo-topo {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+
+
+    .container-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../../img/header-top-mobile.png);
+
+    }
+
+    .logo {
+        width: 100%;
+        background-color: red;
+    }
+
+    .divisao{
+        background-color: white;
+        width: 50%;
+    }
+
+
+
+    .titulo-header p {
+        font-size: 20px;
+    }
+
+    .container-header p {
+        font-size: 15px;
+    }
+
+    .titulo-header h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .titulo-header h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .titulo-header a {
+        margin-top: 25px;
+        font-weight: 200;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .tamanho-site-aide{
+        width: 80%;
+    }
+
+    .tamanho-site-usina{
+        width: 80%;
+    }
+
+    .tamanho-site-easy{
+        width: 80%;
+    }
+
+    .imagem-topo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .imagem-topo img {
+        width: 70%;
+    }
+
+    .navbar img {
+        width: 15%;
+    }
+
+    .container-quem-sou {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        background-image: url(../../../img/quem-sou-eu-mobile.png);
+    }
+
+    .texto-sou {
+        text-align: center;
+        width: 80%;
+    }
+
+    .texto-sou p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .imagem02 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .imagem02 img {
+        width: 50%;
+        margin-top: 50px
+    }
+
+    .texto-sou {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-sou h1 {
+        font-size: 30px;
+    }
+
+    .texto-sobre-mim {
+        width: 80%;
+        margin-top: 35px;
+    }
+
+    .linha-do-tempo{
+        margin-top: 80px;
+    }
+
+    .idade-cidade {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experiencias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+
+    .carreira{
+        background-color: gray;
+        background-image: none;
+    }
+    .carreira h1{
+        text-align: center;
+        margin-left: 0px;
+
+    }
+    .icone-idade p {
+        width: 100%;
+        align-items: center;
+    }
+
+    .texto-icone label {
+        display: flex;
+    }
+
+    .tipos-site{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .minha-experiencia{
+        display: none;
+    }
+
+    .minha-experiencia-mobile{
+        display: flex;
+        background-image: url(../../../img/experiencia-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .tamanho-site-aide a{
+        margin-top: 430px;
+    }
+
+    .tamanho-site-usina a{
+        margin-top: 430px;
+    }
+
+    .tamanho-site-easy a{
+        margin-top: 430px;
+    }
+
+    .site-desenvolvidos {
+        background-image: none
+    }
+
+    .unidades{
+        width: 50%;
+    }
+
+}
