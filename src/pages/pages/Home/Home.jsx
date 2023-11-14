@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Home/home.css'
 import Logo from '../../../img/logo-mk.png'
 import Imagem01 from '../../../img/mateus01.png'
 import Imagem02 from '../../../img/mateus02.png'
 import Imagem03 from '../../../img/logo-pax.png'
+import { saveAs } from 'file-saver';
 import Imagem04 from '../../../img/logo-boi.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -32,8 +33,21 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import StarsIcon from '@mui/icons-material/Stars';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Imagemrodape from '../../../img/mateus03.png'
+import Curriculo from '../../../img/curriculo.pdf'
+import MenuIcon from '@mui/icons-material/Menu';
 
-const Home = () => {
+export default function Home() {
+
+  const handleDownload = () => {
+    saveAs(Curriculo, 'curriculo.pdf');
+  };
+
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
+
 
   return (
     <div className='content-fundo-topo'>
@@ -42,26 +56,40 @@ const Home = () => {
         <nav>
           <ul>
             <li>
-              <a href='#'>HOME</a>
+              <a href='#home'>HOME</a>
             </li>
             <li>
-              <a href='#'>SOBRE MIM</a>
+              <a href='#sobre-mim'>SOBRE MIM</a>
             </li>
             <li>
-              <a herf='#'>EXPERIÊNCIAS</a>
+              <a herf='#experiencias'>EXPERIÊNCIAS</a>
             </li>
             <li>
-              <a href='#'>SITES</a>
+              <a href='#sites'>SITES</a>
             </li>
             <li>
-              <a href='#'>CERTIFICAÇÕES</a>
+              <a href='#certificacoes'>CERTIFICAÇÕES</a>
             </li>
           </ul>
         </nav>
-        <label href='#'>CONTATO</label>
+        <div className="mobile-menu">
+          <button onClick={toggleMenu}><MenuIcon /></button>
+          {menuVisible && (
+            <div className="menu-options">
+              <div><a href='#home'>HOME</a></div>
+              <div><a href='#sobre-mim'>SOBRE MIM</a></div>
+              <div><a herf='#experiencias'>EXPERIÊNCIAS</a></div>
+              <div><a href='#sites'>SITES</a></div>
+              <div><a href='#certificacoes'>CERTIFICAÇÕES</a></div>
+              <div><a href='#contato'>CONTATO</a></div>
+            </div>
+          )}
+        </div>
+        <label href='#contato'>CONTATO</label>
       </div>
+
       <div className="container-header ">
-        <div className="titulo-header animate__fadeInLeft">
+        <div id="home" className="titulo-header animate__fadeInLeft">
           <p>BEM VINDO!</p>
           <h1>Mateus Pitta</h1>
           <h2>Front-End</h2>
@@ -86,11 +114,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='container-quem-sou'>
+      <div className='container-quem-sou' id="sobre-mim">
         <div className='imagem02'>
           <img src={Imagem02}></img>
         </div>
-        <div className='texto-sou'>
+        <div className='texto-sou' >
           <h5>SOBRE MIM</h5>
           <h1>Quem sou eu?</h1>
           <div className='texto-sobre-mim'>
@@ -126,11 +154,11 @@ const Home = () => {
             </div>
           </div>
           <div className='button-curriculo'>
-            <button>BAIXAR CURRICULO<ArticleIcon fontSize='small' /></button>
+            <button onClick={handleDownload} >BAIXAR CURRICULO<ArticleIcon fontSize='small' /></button>
           </div>
         </div>
       </div>
-      <div className='minha-experiencia'>
+      <div className='minha-experiencia' id="certificacoes">
         <div className='linha-do-tempo'>
           <h1>Habilidades</h1>
           <div className='icones-habilidades'>
@@ -188,7 +216,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='minha-experiencia-mobile'>
+      <div className='minha-experiencia-mobile' id="site">
         <div className='linha-do-tempo'>
           <h1>Habilidades</h1>
           <div className='icones-habilidades'>
@@ -239,7 +267,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='site-desenvolvidos'>
+      <div className='site-desenvolvidos' id="sites">
         <p>Sites Desenvolvidos</p>
         <div className='tipos-site'>
           <div className='tamanho-site-aide'>
@@ -253,7 +281,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='carreira'>
+      <div className='carreira' id="experiencias">
         <h1>Experiências</h1>
         <div className='experiencias'>
           <div className='unidades'>
@@ -318,23 +346,23 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='rodape'>
+      <div className='rodape' id="contato">
         <div className='tipos-contato'>
-        <h1>Contato</h1>
+          <h1>Contato</h1>
           <div className='whatsapp'>
-            <WhatsAppIcon/>
-            <a href="https://api.whatsapp.com/send?phone=5567999282807&text=ol%C3%A1%20vi%20o%20seu%20portf%C3%B3lio!"><label>(67) 999928-2807</label></a>
+            <WhatsAppIcon />
+            <a href="https://api.whatsapp.com/send?phone=5567999282807&text=ol%C3%A1%20vi%20o%20seu%20portf%C3%B3lio!"><h4>(67) 999928-2807</h4></a>
           </div>
           <div className='whatsapp'>
-            <MailOutlineIcon/>
-            <label>contato.mateuspitta@gmail.com</label>
+            <MailOutlineIcon />
+            <h4>contato.mateuspitta@gmail.com</h4>
           </div>
           <div className='whatsapp'>
-            <InstagramIcon/> 
-            <a href='https://www.instagram.com/mateuskronbauerr/'><label>@mateuskronbauerr</label></a>
-            </div>
+            <InstagramIcon />
+            <a href='https://www.instagram.com/mateuskronbauerr/'><h4>@mateuskronbauerr</h4></a>
+          </div>
           <h2>Envie uma mensagem para mim!</h2>
-          <button>MENSAGEM</button>
+          <button href="https://wa.me/5567999282807?text=Ol%C3%A1+vi+o+seu+portif%C3%B3lio%21">MENSAGEM</button>
         </div>
         <div className='second-div'>
           <img src={Imagemrodape}></img>
@@ -345,7 +373,4 @@ const Home = () => {
     </div>
   )
 }
-
-export default Home
-
 
