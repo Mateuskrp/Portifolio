@@ -62,7 +62,7 @@ li {
 }
 
 .container-header {
-  background-image: url("../../../img/header-topo.png");
+  background-image: url("../../img/header-topo.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -179,7 +179,7 @@ li {
 
 .container-quem-sou {
   padding-top: 150px;
-  background-image: url(../../../img/quem-eu-sou.png);
+  background-image: url(../../img/quem-eu-sou.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -261,7 +261,7 @@ li {
   align-items: center;
   flex-direction: column;
   padding-top: 100px;
-  background-image: url(../../../img/projetos-fundo.png);
+  background-image: url(../../img/projetos-fundo.png);
   width: 100%;
 }
 
@@ -396,7 +396,7 @@ li {
 }
 
 .minha-experiencia {
-  background-image: url(../../../img/experiencia.png);
+  background-image: url(../../img/experiencia.png);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -492,7 +492,7 @@ li {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url(../../../img/site.png);
+  background-image: url(../../img/site.png);
   background-repeat: no-repeat;
   background-size: 130%;
   padding-bottom: 100px;
@@ -519,7 +519,7 @@ li {
 .tamanho-site-aide {
   width: 25%;
   padding: 10px;
-  background-image: url(../../../img/site-aide.png);
+  background-image: url(../../img/site-aide.png);
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 10px;
@@ -549,7 +549,7 @@ li {
 .tamanho-site-usina {
   width: 25%;
   padding: 10px;
-  background-image: url(../../../img/site-usina.png);
+  background-image: url(../../img/site-usina.png);
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 10px;
@@ -575,7 +575,7 @@ li {
 .tamanho-site-easy {
   width: 25%;
   padding: 10px;
-  background-image: url(../../../img/site-easy.png);
+  background-image: url(../../img/site-easy.png);
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 10px;
@@ -604,7 +604,7 @@ li {
   width: 100%;
   color: white;
   margin-top: 100px;
-  background-image: url(../../../img/carreira.png);
+  background-image: url(../../img/carreira.png);
   background-size: 100%;
   background-repeat: no-repeat;
   padding-bottom: 100px;
@@ -684,7 +684,7 @@ li {
 .rodape {
   display: flex;
   align-items: center;
-  background-image: url("../../../img/rodape.png");
+  background-image: url("../../img/rodape.png");
   background-position: bottom;
   background-size: 100%;
 }
@@ -832,7 +832,7 @@ li {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url(../../../img/header-top-mobile.png);
+    background-image: url(../../img/header-top-mobile.png);
   }
 
   .logo {
@@ -971,7 +971,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    background-image: url(../../../img/quem-sou-eu-mobile.png);
+    background-image: url(../../img/quem-sou-eu-mobile.png);
   }
 
   .texto-sou {
@@ -1066,7 +1066,7 @@ li {
 
   .minha-experiencia-mobile {
     display: flex;
-    background-image: url(../../../img/experiencia-mobile.png);
+    background-image: url(../../img/experiencia-mobile.png);
     background-repeat: no-repeat;
     background-size: 100%;
   }

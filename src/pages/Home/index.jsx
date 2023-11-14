@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import '../Home/home.css'
-import Logo from '../../../img/logo-mk.png'
-import Imagem01 from '../../../img/mateus01.png'
-import Imagem02 from '../../../img/mateus02.png'
-import Imagem03 from '../../../img/logo-pax.png'
+import './home.css'
+import Logo from '../../img/mk.png'
+import Imagem01 from '../../img/mateus01.png'
+import Imagem02 from '../../img/mateus02.png'
+import Imagem03 from '../../img/logo-pax.png'
 import { saveAs } from 'file-saver';
-import Imagem04 from '../../../img/logo-boi.png'
+import Imagem04 from '../../img/logo-boi.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -13,7 +13,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import ContactEmergencyIcon from '@mui/icons-material/ContactEmergency';
-import TypingEffect from '../../../components/digitacao'
+import TypingEffect from '../../components/digitacao'
 import ArticleIcon from '@mui/icons-material/Article';
 import { FaLaravel } from 'react-icons/fa'
 import { FaHtml5 } from 'react-icons/fa'
@@ -32,8 +32,8 @@ import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import StarsIcon from '@mui/icons-material/Stars';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import Imagemrodape from '../../../img/mateus03.png'
-import Curriculo from '../../../img/curriculo.pdf'
+import Imagemrodape from '../../img/mateus03.png'
+import Curriculo from '../../img/curriculo.pdf'
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Home() {
