@@ -170,9 +170,9 @@ export default function Home() {
             <div className='icone-idade'>
               <div className='texto-icone'>
                 <ContactEmergencyIcon fontSize='small' />
-                <label>CARTEIRA</label>
+                <label>ESPECIALIDADE</label>
               </div>
-              <p>AB</p>
+              <p>TI</p>
             </div>
           </div>
           <div className='button-curriculo'>
