@@ -62,13 +62,10 @@ export default function Home() {
               <a href='#sobre-mim'>SOBRE MIM</a>
             </li>
             <li>
-              <a herf='#experiencias'>EXPERIÊNCIAS</a>
-            </li>
-            <li>
               <a href='#sites'>SITES</a>
             </li>
             <li>
-              <a href='#certificacoes'>CERTIFICAÇÕES</a>
+              <a href='#certificacoes'>EXPERIÊNCIAS</a>
             </li>
           </ul>
         </nav>
@@ -85,7 +82,10 @@ export default function Home() {
             </div>
           )}
         </div>
-        <label href='#contato'>CONTATO</label>
+        <div className='contato-portifolio'>
+        <a href='#contato'>CONTATO</a>
+        </div>
+        
       </div>
 
       <div className="container-header ">
@@ -281,9 +281,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='carreira' id="experiencias">
+      <div className='carreira' >
         <h1>Experiências</h1>
-        <div className='experiencias'>
+        <div className='experiencias' id="teste">
           <div className='unidades'>
             <ImportantDevicesIcon sx={{ fontSize: 50 }} />
             <a>Atualmente</a>
@@ -346,10 +346,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='rodape' id="contato">
+      <div className='rodape' >
         <div className='tipos-contato'>
           <h1>Contato</h1>
-          <div className='whatsapp'>
+          <div className='whatsapp' id="contato">
             <WhatsAppIcon />
             <a href="https://api.whatsapp.com/send?phone=5567999282807&text=ol%C3%A1%20vi%20o%20seu%20portf%C3%B3lio!"><h4>(67) 999928-2807</h4></a>
           </div>
@@ -362,7 +362,7 @@ export default function Home() {
             <a href='https://www.instagram.com/mateuskronbauerr/'><h4>@mateuskronbauerr</h4></a>
           </div>
           <h2>Envie uma mensagem para mim!</h2>
-          <button href="https://wa.me/5567999282807?text=Ol%C3%A1+vi+o+seu+portif%C3%B3lio%21">MENSAGEM</button>
+          <button> <a  href="https://wa.me/5567999282807?text=Ol%C3%A1+vi+o+seu+portif%C3%B3lio%21">MENSAGEM</a></button>
         </div>
         <div className='second-div'>
           <img src={Imagemrodape}></img>
