@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect  } from 'react'
 import './home.css'
 import Logo from '../../img/mk.png'
 import Imagem01 from '../../img/mateus01.png'
@@ -35,6 +35,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Imagemrodape from '../../img/mateus03.png'
 import Curriculo from '../../img/curriculo.pdf'
 import MenuIcon from '@mui/icons-material/Menu';
+import 'animate.css';
 
 export default function Home() {
 
@@ -48,7 +49,28 @@ export default function Home() {
     setMenuVisible(!menuVisible);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const elemento = document.querySelector('.linha-do-tempo');
+      const distanciaTopo = elemento.getBoundingClientRect().top;
 
+      if (distanciaTopo < window.innerHeight) {
+        // Adiciona a classe de animação quando o elemento está visível na tela
+        elemento.classList.add('animate__fadeIn');
+      } else {
+        // Remove a classe de animação quando o elemento não está visível na tela
+        elemento.classList.remove('animate__fadeIn');
+      }
+    };
+
+    // Adiciona o evento de rolagem
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove o evento quando o componente é desmontado
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div className='content-fundo-topo'>
       <div className='navbar'>
@@ -83,9 +105,9 @@ export default function Home() {
           )}
         </div>
         <div className='contato-portifolio'>
-        <a href='#contato'>CONTATO</a>
+          <a href='#contato'>CONTATO</a>
         </div>
-        
+
       </div>
 
       <div className="container-header ">
@@ -109,7 +131,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="imagem-topo animate__fadeRight">
+        <div className="imagem-topo animate__fadeInLeft">
           <img src={Imagem01}></img>
         </div>
       </div>
@@ -159,7 +181,7 @@ export default function Home() {
         </div>
       </div>
       <div className='minha-experiencia' id="certificacoes">
-        <div className='linha-do-tempo'>
+        <div className='linha-do-tempo animate__fadeIn'>
           <h1>Habilidades</h1>
           <div className='icones-habilidades'>
             <div className='texto-icone-habilidade'>
@@ -269,8 +291,8 @@ export default function Home() {
       </div>
       <div className='site-desenvolvidos' id="sites">
         <p>Sites Desenvolvidos</p>
-        <div className='tipos-site'>
-          <div className='tamanho-site-aide'>
+        <div className='tipos-site '>
+          <div className='tamanho-site-aide '>
             <a href="https://www.aidesolucoes.com.br">ACESSAR</a>
           </div>
           <div className='tamanho-site-usina'>
@@ -362,7 +384,7 @@ export default function Home() {
             <a href='https://www.instagram.com/mateuskronbauerr/'><h4>@mateuskronbauerr</h4></a>
           </div>
           <h2>Envie uma mensagem para mim!</h2>
-          <button> <a  href="https://wa.me/5567999282807?text=Ol%C3%A1+vi+o+seu+portif%C3%B3lio%21">MENSAGEM</a></button>
+          <button> <a href="https://wa.me/5567999282807?text=Ol%C3%A1+vi+o+seu+portif%C3%B3lio%21">MENSAGEM</a></button>
         </div>
         <div className='second-div'>
           <img src={Imagemrodape}></img>

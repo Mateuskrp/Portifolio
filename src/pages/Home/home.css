@@ -528,6 +528,10 @@ li {
   justify-content: center;
 }
 
+.site-desenvolvidos animate__fadeInUp{
+  --animate-duration: 2s;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -731,6 +735,11 @@ li {
   color: white;
 }
 
+.whatsapp h4{
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+
 .whatsapp label {
   color: white;
   font-size: 15px;
@@ -792,11 +801,20 @@ li {
   color: white;
 }
 
+.linha-do-tempo animate__fadeIn{
+  --animate-duration: 800ms;
+}
+
+
+
 .minha-experiencia-mobile {
   display: none;
 }
 
 @media (max-width: 992px) {
+  .contato-portifolio{
+    display: none;
+  }
   .nav {
     display: none;
   }
@@ -932,8 +950,7 @@ li {
     border-width: 10px;
     margin-left: -10px;
   }
-  
-  
+
   /* Adicione estilos adicionais conforme necessário */
   .mobile-menu {
     position: relative;
@@ -960,6 +977,10 @@ li {
 
   .imagem-topo img {
     width: 70%;
+  }
+
+  .imagem-topo animate__fadeInLeft {
+    --animate-duration: 2s;
   }
 
   .navbar img {
